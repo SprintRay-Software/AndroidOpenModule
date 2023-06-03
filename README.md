@@ -10,14 +10,14 @@
 > 第一步需要吧 AndroidOpenModule clone 到 Capricorn同一个目录下
 > 目录结构参考
 
-project
- --Capricorn
- --AndroidOpenModule
- --.........
-在Capricorn的 setting.gradle 中添加这这两行，
+>project  
+ --Capricorn  
+ --AndroidOpenModule  
+ --.........  
+在Capricorn的 setting.gradle 中添加这这两行，  
 
-include(':lib-module')
-project(':lib-module').projectDir = new File('../AndroidOpenModule/lib-module')
+>include(':lib-module')  
+project(':lib-module').projectDir = new File('../AndroidOpenModule/lib-module')  
 
 
 > 这样多个项目可以公用同一个module 同时确保 公用模块中的代码同步
